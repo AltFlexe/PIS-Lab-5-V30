@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Написать статью</title>
+    <link rel="stylesheet" href="{% static 'css/article.css' %}">
+</head>
+<body class="create-post">
+    <header class="header content">
+        <img src="{% static 'img/logo.svg' %}" alt="Аренда торговых площадей">
+        <a href="{% url 'archive' %}">Все записи</a>
+    </header>
+    <main class="content">
+        <h1>Написать статью</h1>
+        <form method="post">
+            {% csrf_token %}
+            <label for="title">Название статьи</label>
+            <input id="title" type="text" name="title" value="{{ form.title }}">
+            <label for="text">Текст статьи</label>
+            <textarea id="text" name="text" rows="7">{{ form.text }}</textarea>
+            {% if form.errors %}
+            <p class="form-error" role="alert">{{ form.errors }}</p>
+            {% endif %}
+            <button type="submit">Сохранить</button>
+        </form>
+    </main>
+</body>
+</html>

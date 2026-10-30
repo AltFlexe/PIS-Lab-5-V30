@@ -1,0 +1,24 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ post.title }}</title>
+    <link rel="stylesheet" href="{% static 'css/article.css' %}">
+</head>
+<body class="article">
+    <header class="header content">
+        <img src="{% static 'img/logo.svg' %}" alt="Аренда торговых площадей">
+        <a href="{% url 'archive' %}">Все записи</a>
+    </header>
+    <main class="content">
+        <h1>{{ post.title }}</h1>
+        <div class="article-info">
+            <div class="article-author">{{ post.author.username }}</div>
+            <div class="article-created-date">{{ post.created_date }}</div>
+        </div>
+        <p class="article-text">{{ post.text|linebreaksbr }}</p>
+    </main>
+</body>
+</html>

@@ -1,0 +1,14 @@
+[
+  {"model":"articles.space","pk":1,"fields":{"number":"А-101","floor":1,"area":"25.00","air_conditioner":true,"daily_price":"1200.00"}},
+  {"model":"articles.space","pk":2,"fields":{"number":"А-102","floor":1,"area":"32.00","air_conditioner":true,"daily_price":"1500.00"}},
+  {"model":"articles.space","pk":3,"fields":{"number":"А-103","floor":1,"area":"18.00","air_conditioner":false,"daily_price":"900.00"}},
+  {"model":"articles.space","pk":4,"fields":{"number":"Б-201","floor":2,"area":"40.00","air_conditioner":true,"daily_price":"1800.00"}},
+  {"model":"articles.space","pk":5,"fields":{"number":"Б-202","floor":2,"area":"28.00","air_conditioner":false,"daily_price":"1100.00"}},
+  {"model":"articles.space","pk":6,"fields":{"number":"В-301","floor":3,"area":"36.00","air_conditioner":true,"daily_price":"1600.00"}},
+  {"model":"articles.space","pk":7,"fields":{"number":"В-302","floor":3,"area":"22.00","air_conditioner":false,"daily_price":"1000.00"}},
+  {"model":"articles.tenant","pk":1,"fields":{"name":"Учебный магазин","address":"Учебный адрес","phone":"000-00-00","details":"Учебные реквизиты","contact":"Контактное лицо"}},
+  {"model":"articles.contract","pk":1,"fields":{"number":"Д-01","tenant":1,"signed_date":"2026-09-20"}},
+  {"model":"articles.contractspace","pk":1,"fields":{"contract":1,"space":3,"start_date":"2026-10-01","end_date":"2026-11-30"}},
+  {"model":"articles.contractspace","pk":2,"fields":{"contract":1,"space":5,"start_date":"2026-10-10","end_date":"2026-12-31"}},
+  {"model":"articles.payment","pk":1,"fields":{"contract":1,"month":"2026-10-01","paid_date":"2026-10-15","amount":"30000.00"}}
+]

@@ -1,10 +1,10 @@
 body {
-    background: #1abc9c;
+    background: #f3f6fa;
     font-family: Tahoma, Arial, sans-serif;
-    color: #ffffff;
+    color: #243746;
     margin: 0;
 }
-a { color: #ffffff; }
+a { color: #245b80; }
 .content {
     width: 960px;
     max-width: calc(100% - 40px);
@@ -20,7 +20,7 @@ a { color: #ffffff; }
     margin-right: auto;
 }
 .post-title { margin: 0 0 12px; }
-.post-title a { color: #ffffff; }
+.post-title a { color: #245b80; }
 .one-post { margin-bottom: 42px; }
 .article-author { width: 50%; float: left; font-weight: bold; }
 .article-created-date { text-align: right; font-style: italic; }
@@ -51,7 +51,7 @@ a { color: #ffffff; }
     width: 100%;
     padding: 12px;
     font: inherit;
-    border: 1px solid #0c7f6b;
+    border: 1px solid #829caa;
     border-radius: 4px;
 }
 .create-post button {
@@ -59,7 +59,7 @@ a { color: #ffffff; }
     font: inherit;
     font-weight: bold;
     color: #ffffff;
-    background: #0c7563;
+    background: #245f79;
     border: 0;
     border-radius: 4px;
     cursor: pointer;
